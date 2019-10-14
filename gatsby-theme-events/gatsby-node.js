@@ -6,8 +6,8 @@ const fs = require("fs");
 // 4. query for events and create pages
 
 // 1.
-exports.onPreBootstrap = ({ reporter }) => {
-  const contentPath = "data";
+exports.onPreBootstrap = ({ reporter }, options) => {
+  const contentPath = options.contentPath || "data";
   if (!fs.existsSync(contentPath)) {
     reporter.info(`create the ${contentPath} directory`);
     fs.mkdirSync(contentPath);
@@ -28,8 +28,8 @@ exports.sourceNodes = ({ actions }) => {
 };
 
 // 3.
-exports.createResolvers = ({ createResolvers }) => {
-  const basePath = "/";
+exports.createResolvers = ({ createResolvers }, options) => {
+  const basePath = options.basePath || "/";
 
   const slugify = str => {
     const slug = str
@@ -49,8 +49,8 @@ exports.createResolvers = ({ createResolvers }) => {
 };
 
 // 4.
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const basePath = "/";
+exports.createPages = async ({ actions, graphql, reporter }, options) => {
+  const basePath = options.basePath || "/";
   actions.createPage({
     path: basePath,
     component: require.resolve("./src/templates/events.js")

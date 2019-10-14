@@ -33,7 +33,6 @@ const EventDate = ({ startDate, endDate }) => {
   );
 };
 const Event = ({ name, url, startDate, endDate, location }) => {
-  console.log(startDate);
   return (
     <div>
       <h1>

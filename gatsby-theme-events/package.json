@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "gatsby-source-filesystem": "^2.1.31",
+    "gatsby-theme-ui": "^0.2.0",
     "gatsby-transformer-yaml": "^2.2.13"
   }
 }
