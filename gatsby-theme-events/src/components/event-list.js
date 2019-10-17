@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
+import { Styled } from "theme-ui";
 
 const EventList = ({ events }) => {
   return (
     <>
-      <h1>Upcoming Events</h1>
-      <ul>
+      <Styled.h1>Upcoming Events</Styled.h1>
+      <Styled.ul>
         {events.map(e => (
-          <li key={e.id}>
+          <Styled.li key={e.id}>
             <Link to={e.slug}>{e.name}</Link>
             <br />
             {console.log(e.startDate)}
@@ -17,9 +18,9 @@ const EventList = ({ events }) => {
               year: "numeric"
             })}{" "}
             in {e.location}
-          </li>
+          </Styled.li>
         ))}
-      </ul>
+      </Styled.ul>
     </>
   );
 };
