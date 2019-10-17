@@ -14,3 +14,4 @@ course.
 - yarn workspace gatsby-theme-events develop
 - yarn workspace gatsby-theme-events add gatsby-source-filesystem gatsby-transformer-yaml
 - yarn workspace gatsby-theme-events develop
+- npm publish --access public
