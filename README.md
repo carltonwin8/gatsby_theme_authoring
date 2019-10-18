@@ -1,8 +1,14 @@
 # Gatsby Theme Authoring
 
-The code in this repository is based on the
-[Gatsby Theme Authoring](https://egghead.io/courses/gatsby-theme-authoring)
-course.
+The code in this repository is based on:
+
+- [Gatsby Theme Authoring](https://egghead.io/courses/gatsby-theme-authoring)
+- [Building a Theme](https://www.gatsbyjs.org/tutorial/building-a-theme/)
+- [Above course code repository](https://github.com/jlengstorf/authoring-gatsby-themes)
+
+This Gatsby Theme is used by the
+[Gatsby Theme Use](https://github.com/carltonwin8/gatsby_theme_use).
+repository.
 
 ## Commands
 
