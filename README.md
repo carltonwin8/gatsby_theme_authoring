@@ -7,7 +7,7 @@ The code in this repository is based on:
 - [Above course code repository](https://github.com/jlengstorf/authoring-gatsby-themes)
 
 This Gatsby Theme is used by the
-[Gatsby Theme Use](https://github.com/carltonwin8/gatsby_theme_use).
+[Gatsby Theme Use](https://github.com/carltonwin8/gatsby_theme_use)
 repository.
 
 ## Commands
